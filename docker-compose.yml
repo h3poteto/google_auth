@@ -17,6 +17,8 @@ services:
     environment:
       BUNDLE_APP_CONFIG: /usr/src/app/.bundle
       DB_HOST: mysql
+      GOOGLE_CLIENT_ID: $GOOGLE_CLIENT_ID
+      GOOGLE_CLIENT_SECRET: $GOOGLE_CLIENT_SECRET
     volumes:
       - .:/usr/src/app
     links:
